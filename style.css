@@ -46,6 +46,9 @@ body {
   line-height: 1.5;
   padding: 5px 50px;
 }
+.dawn span {
+  margin-left: 2px;
+}
 
 .nav-2 {
   width: 100%;
@@ -138,10 +141,16 @@ span {
   margin-top: 15px;
   margin-left: 20%;
 }
+.input input {
+  padding: 10px;
+}
 
 .options {
   margin-top: 10px;
   margin-left: 20%;
+}
+.options input {
+  padding: 10px;
 }
 .your-msg {
   margin-top: 10px;
@@ -244,27 +253,32 @@ span {
   .image-2 {
     margin-top: 20px;
   }
-  h2 {
+  /* h2 {
     margin-top: 15px;
-  }
+  } */
 }
 
 @media (max-width: 375px) {
   .comments .input {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 
     flex-direction: wrap;
   }
   span {
     margin-left: 20%;
-    /* border: 1px solid red; */
     width: 60%;
     height: 40%;
     font-size: 17px;
     margin-top: 10px;
   }
+  .options input {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
   .your-msg {
     margin-top: 10px;
-   
   }
 }
